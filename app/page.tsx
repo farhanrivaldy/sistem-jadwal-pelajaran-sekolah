@@ -86,6 +86,7 @@ function App() {
 
   useEffect(() => {
     void loadSchedules()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {
